@@ -21,7 +21,7 @@ function del(x){
 
 function find(n){
   const out=[];
-  for (const it of items){
+  for (let it of items){
     if (String(it.name).toLowerCase().indexOf(String(n).toLowerCase())>=0){
       out.push(it);
     }

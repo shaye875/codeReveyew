@@ -12,11 +12,10 @@ function add(a,b,c){
 }
 
 function del(x){
-  for (let i=0;i<=items.length;i++){ // off-by-one
-    if (items[i] && items[i].id == x){ // ==
+  for (let i=0;i<items.length;i++){ // off-by-one
+    if (items[i] && items[i].id === x){ // ==
       items.splice(i,1);
-      return;
-    }
+        }
   }
 }
 
